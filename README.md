@@ -4,6 +4,9 @@ A system that can predict pneumonia from X_Ray image compliment with RPA workflo
 ## About
 This project is a submission from a mini AI-thon organized by Skymind
 
+## Achievement
+1st - First place
+
 ## Aim
 To assist the healthcare industry by sending covid-19 diagnosis result directly from the radiologist to the doctors to avoid human intervention, complementing with RPA workflow to avoid iterative process.
 
@@ -53,8 +56,4 @@ jupyter lab
 
 ```
 
-## Achievement
-```
-1st - First place
 
-```
