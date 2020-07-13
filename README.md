@@ -8,9 +8,9 @@ This project is a submission from a mini AI-thon organized by Skymind
 To assist the healthcare industry by sending covid-19 diagnosis result directly from the radiologist to the doctors to avoid human intervention, complementing with RPA workflow to avoid iterative process.
 
 ## Technology
-Deep Learning, Web Api
+Deep Learning CNN, Web Api, Robotic Process Automation (RPA)
 
-![technology](/image/technology.PNG)
+![technology](/image/technologies.PNG)
 
 ## Workflow
 ![workflow](/image/workflow.PNG)
