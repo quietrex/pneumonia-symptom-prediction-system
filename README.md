@@ -2,7 +2,7 @@
 A system that can predict pneumonia from X_Ray image compliment with RPA workflow
 
 ## About
-This project is a submission from a mini AI-thon organized by Skymind
+This project is a submission from a 2-day mini AI-thon organized by Skymind
 
 ## Achievement
 1st - First place
