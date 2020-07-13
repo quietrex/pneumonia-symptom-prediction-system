@@ -1,0 +1,192 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="TeamNas" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="973,1894" sap2010:WorkflowViewState.IdRef="TeamNas_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="42">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="17">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Sequence to detect covid 19 patient&#xD;&#xA;" DisplayName="MainSequence" sap:VirtualizedContainerService.HintSize="831,1731" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:Window" Name="AdobeWindow" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser - open new browser" sap:VirtualizedContainerService.HintSize="789,1597" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="http://192.168.43.174:5000/static/predict.html">
+      <ui:OpenBrowser.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Workflow to predict covid 19 patients" sap:VirtualizedContainerService.HintSize="755,1496" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="result" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  image-selector'" sap:VirtualizedContainerService.HintSize="713,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="04ef759b-1ef8-461b-aea6-8b38458209b5" InformativeScreenshot="a3596cf95c8de5288672142259763234" Selector="&lt;webctrl tag='INPUT' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <Delay DisplayName="Delay" Duration="00:00:03" sap:VirtualizedContainerService.HintSize="713,22" sap2010:WorkflowViewState.IdRef="Delay_2" />
+            <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'Edit'" sap:VirtualizedContainerService.HintSize="713,134" sap2010:WorkflowViewState.IdRef="SetValue_1" Text="C:\Users\RexPC\Desktop\Bootcamp\coivd-chestxray-ds\test\PNEUMONIA\person14_virus_44">
+              <ui:SetValue.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5c842a43-c335-425f-a31b-e066c642789a" InformativeScreenshot="37e8a5b7122c5914ea5d1dd31133fb57" Selector="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SetValue.Target>
+            </ui:SetValue>
+            <Delay DisplayName="Private: Delay" Duration="00:00:01" sap:VirtualizedContainerService.HintSize="713,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click open button to open the image" sap:VirtualizedContainerService.HintSize="713,106" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e82cc9e2-be7e-4f94-9182-15c22cb6264e" InformativeScreenshot="7d7a43a8af5c9bcc30c8a90a84b452cd" Selector="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;&lt;wnd ctrlid='1' title='&amp;amp;Open' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click predict button to perform prediction" sap:VirtualizedContainerService.HintSize="713,106" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ea096b98-f25d-40e2-b97d-d4c3ff86bd32" InformativeScreenshot="2089ca2d56a3d5de0d2400caafb8e2d3" Selector="&lt;webctrl tag='BUTTON' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get result text" sap:VirtualizedContainerService.HintSize="713,106" sap2010:WorkflowViewState.IdRef="GetValue_1">
+              <ui:GetValue.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6e9774b6-7774-4607-b6a0-7bad4cca1257" InformativeScreenshot="94f3f1dd428dca1fe1df69e17971fac8" Selector="&lt;webctrl id='result-prediction' tag='SPAN' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:GetValue.Target>
+              <ui:GetValue.Value>
+                <OutArgument x:TypeArguments="x:String">[result]</OutArgument>
+              </ui:GetValue.Value>
+            </ui:GetValue>
+            <ui:LogMessage DisplayName="Log Message - to verify getText" sap:VirtualizedContainerService.HintSize="713,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[result]" />
+            <If Condition="[result = &quot;Pneumonia&quot;]" DisplayName="If - detect pneumonia patient and send email" sap:VirtualizedContainerService.HintSize="713,292" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" TimeoutMS="{x:Null}" Body="&#xD;&#xA;&#xD;&#xA;&lt;html&gt;&#xD;&#xA;&#xD;&#xA;&lt;head&gt;&lt;/head&gt;&#xD;&#xA;&#xD;&#xA;&lt;body&gt;&#xD;&#xA;&#xD;&#xA;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;&#xA;&#xD;&#xA;&lt;table style='width: 541px; height: 50px; border-color: #91d5f7;';border='1';&gt;&#xD;&#xA;&#xD;&#xA;&lt;th&gt; COVID-19 X-Ray Detection System&lt;/th&gt;&#xD;&#xA;&#xD;&#xA;&lt;p&gt;Dear Dr RehHan,&lt;/p&gt;&#xD;&#xA;&#xD;&#xA;&lt;p&gt;&lt;br /&gt; Your Patient has been diagnosed With COVID-19&lt;/p&gt;&#xD;&#xA;&#xD;&#xA;&lt;table style='width: 541px; height: 129px; border-color: #91d5f7;' border='1'&gt;&#xD;&#xA;&#xD;&#xA;&lt;tbody&gt;&#xD;&#xA;&#xD;&#xA;&lt;tr style='height: 37px;'&gt;&#xD;&#xA;&#xD;&#xA;&lt;td style='width: 150px; height: 36px;'&gt;&amp;nbsp;Summary&lt;/td&gt;&#xD;&#xA;&#xD;&#xA;&lt;td style='width: 390px; height: 36px;'&gt;&amp;nbsp;Kindly follow the SOPs instructions and contact with the patient immediately.&lt;/td&gt;&#xD;&#xA;&#xD;&#xA;&lt;/tr&gt;&#xD;&#xA;&#xD;&#xA;&lt;tr style='height: 37px;'&gt;&#xD;&#xA;&#xD;&#xA;&lt;td style='width: 150px; height: 37px;'&gt;&amp;nbsp;Priority Level&lt;/td&gt;&#xD;&#xA;&#xD;&#xA;&lt;td style='width: 390px; height: 37px;'&gt;&amp;nbsp;High&lt;/td&gt;&#xD;&#xA;&#xD;&#xA;&lt;/tr&gt;&#xD;&#xA;&#xD;&#xA;&lt;tr style='height: 37px;'&gt;&#xD;&#xA;&#xD;&#xA;&lt;td style='width: 150px; height: 37px; vertical-align: top;'&gt;&lt;span style='color: #ff0000;'&gt;&amp;nbsp;Important Note:&lt;/span&gt;&lt;/td&gt;&#xD;&#xA;&#xD;&#xA;&lt;td style='width: 390px; height: 37px;'&gt;&#xD;&#xA;&#xD;&#xA;&lt;p&gt;&amp;nbsp;Always follow the SOPs to prevent next wave of Covid 19.&lt;b&gt;--ITS/Healthcare Dept.&lt;/p&gt;&#xD;&#xA;&#xD;&#xA;&lt;/td&gt;&#xD;&#xA;&#xD;&#xA;&lt;/tr&gt;&#xD;&#xA;&#xD;&#xA;&lt;/tbody&gt;&#xD;&#xA;&#xD;&#xA;&lt;/table&gt;&#xD;&#xA;&#xD;&#xA;&lt;/body&gt;&#xD;&#xA;&#xD;&#xA;&lt;/html&gt;&#xD;&#xA;&#xD;&#xA;" DisplayName="Send SMTP Mail Message - Positive Covid symptom" Email="tt8005316@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="334,145" sap2010:WorkflowViewState.IdRef="SendMail_4" IsBodyHtml="True" Password="P@$W0rd123" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Covid-19 X-Ray Result" To="tt8005316@gmail.com">
+                  <ui:SendMail.Files>
+                    <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                  </ui:SendMail.Files>
+                </ui:SendMail>
+              </If.Then>
+              <If.Else>
+                <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" TimeoutMS="{x:Null}" Body="&#xA;&#xA;&lt;html&gt;&#xA;&#xA;&lt;head&gt;&lt;/head&gt;&#xA;&#xA;&lt;body&gt;&#xA;&#xA;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xA;&#xA;&lt;table style='width: 541px; height: 50px; border-color: #91d5f7;';border='1';&gt;&#xA;&#xA;&lt;th&gt; COVID-19 X-Ray Detection System&lt;/th&gt;&#xA;&#xA;&lt;p&gt;Dear Dr Rehan,&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&lt;br /&gt; Your Patient has been diagnosed normal&lt;/p&gt;&#xA;&#xA;&lt;table style='width: 541px; height: 129px; border-color: #91d5f7;' border='1'&gt;&#xA;&#xA;&lt;tbody&gt;&#xA;&#xA;&lt;tr style='height: 37px;'&gt;&#xA;&#xA;&lt;td style='width: 150px; height: 36px;'&gt;&amp;nbsp;Summary&lt;/td&gt;&#xA;&#xA;&lt;td style='width: 390px; height: 36px;'&gt;Congratulation, Your patient has been diagnosed normal.&lt;/td&gt;&#xA;&#xA;&lt;/tr&gt;&#xA;&#xA;&lt;tr style='height: 37px;'&gt;&#xA;&#xA;&lt;td style='width: 150px; height: 37px;'&gt;&amp;nbsp;Priority Level&lt;/td&gt;&#xA;&#xA;&lt;td style='width: 390px; height: 37px;'&gt;Low&lt;/td&gt;&#xA;&#xA;&lt;/tr&gt;&#xA;&#xA;&lt;tr style='height: 37px;'&gt;&#xA;&#xA;&lt;td style='width: 150px; height: 37px; vertical-align: top;'&gt;&lt;span style='color: #ff0000;'&gt;&amp;nbsp;Important Note:&lt;/span&gt;&lt;/td&gt;&#xA;&#xA;&lt;td style='width: 390px; height: 37px;'&gt;&#xA;&#xA;&#xA;&#xA;&lt;p&gt;&amp;nbsp;Always follow the SOPs to prevent next wave of covid 19.&lt;b&gt;--ITS/Healthcare Dept.&lt;/p&gt;&#xA;&#xA;&lt;/td&gt;&#xA;&#xA;&lt;/tr&gt;&#xA;&#xA;&lt;/tbody&gt;&#xA;&#xA;&lt;/table&gt;&#xA;&#xA;&lt;/body&gt;&#xA;&#xA;&lt;/html&gt;&#xA;&#xA;" DisplayName="Send SMTP Mail Message - Negative Covid symptom" Email="tt8005316@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="334,145" sap2010:WorkflowViewState.IdRef="SendMail_5" IsBodyHtml="True" Password="P@$W0rd123" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Covid-19 X-Ray Result" To="tt8005316@gmail.com">
+                  <ui:SendMail.Files>
+                    <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                  </ui:SendMail.Files>
+                </ui:SendMail>
+              </If.Else>
+            </If>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box - Once process is completed" sap:VirtualizedContainerService.HintSize="713,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Process is completed.&quot;]" />
+          </Sequence>
+        </ActivityAction>
+      </ui:OpenBrowser.Body>
+    </ui:OpenBrowser>
+  </Sequence>
+</Activity>
