@@ -46,10 +46,15 @@ jupyter lab
 ## Contributors
 
 ```
-1. Download UIPATH: https://cloud.uipath.com/iiumxzcsuyg/portal_/home
-2. Open Project folder "CovidDiagnosisProcess"
-3. Change the URL as needed
+1. Chan Kuok Hong/Rex Chan
+2. Muhammad Laziem Bin Shafie
+3. Muhammad Amiruddin Bin Bustaman
+4. Rehan Shahid
+
 ```
 
 ## Achievement
+```
+1st - First place
 
+```
