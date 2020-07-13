@@ -10,10 +10,10 @@ To assist the healthcare industry by sending covid-19 diagnosis result directly 
 ## Technology
 Deep Learning, Web Api
 
-![rex](image/technology.png)
+![technology](/image/technology.png)
 
 ## Workflow
-![rex](image/workflow.png)
+![workflow](/image/workflow.png)
 
 ## How to deploy the webapp
 
