@@ -1,4 +1,4 @@
-# Predicting COVID-19 for Chest X-Ray images using Deep Learning
+# Predicting COVID-19 for Chest X-Ray images using Deep Learning (CNN)
 A system that can predict pneumonia from X_Ray image compliment with RPA workflow
 
 ## About
@@ -10,15 +10,10 @@ To assist the healthcare industry by sending covid-19 diagnosis result directly 
 ## Technology
 Deep Learning, Web Api
 
-![rex](workflow.png)
+![rex](image/technology.png)
 
 ## Workflow
-
-```
-1. Download UIPATH: https://cloud.uipath.com/iiumxzcsuyg/portal_/home
-2. Open Project folder "CovidDiagnosisProcess"
-3. Change the URL as needed
-```
+![rex](image/workflow.png)
 
 ## How to deploy the webapp
 
