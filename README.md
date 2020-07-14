@@ -2,7 +2,10 @@
 A system that can predict pneumonia from X_Ray image compliment with RPA workflow
 
 ## About
-This project is a submission from a mini AI-thon organized by Skymind
+This project is a submission from a 2-day mini AI-thon organized by Skymind
+
+## Achievement
+1st - First place
 
 ## Aim
 To assist the healthcare industry by sending covid-19 diagnosis result directly from the radiologist to the doctors to avoid human intervention, complementing with RPA workflow to avoid iterative process.
@@ -46,10 +49,11 @@ jupyter lab
 ## Contributors
 
 ```
-1. Download UIPATH: https://cloud.uipath.com/iiumxzcsuyg/portal_/home
-2. Open Project folder "CovidDiagnosisProcess"
-3. Change the URL as needed
+1. Chan Kuok Hong/Rex Chan
+2. Muhammad Laziem Bin Shafie
+3. Muhammad Amiruddin Bin Bustaman
+4. Rehan Shahid
+
 ```
 
-## Achievement
 
