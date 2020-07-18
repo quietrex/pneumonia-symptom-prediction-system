@@ -21,8 +21,6 @@ Deep Learning CNN, Web Api, Robotic Process Automation (RPA)
 ## How to deploy the webapp
 
 Download h5 file: https://drive.google.com/file/d/1scqgXosKhmHqj7b5dKrL2LGoyBeFMVJ3/view?usp=sharing
-OR
-open ClassificationModelWithCNN_1.h5
 
 ```bash
 pip install -r requirement.txt
